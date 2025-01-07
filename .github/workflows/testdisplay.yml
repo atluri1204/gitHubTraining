@@ -1,0 +1,12 @@
+on: 
+  push
+
+jobs:
+  display_output:
+    name: Run a simple command
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the output
+        run: |
+          echo "This is Raghav Atluri"
+        shell: bash
