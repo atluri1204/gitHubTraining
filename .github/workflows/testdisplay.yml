@@ -1,12 +1,19 @@
 on: 
   push
-
+permissions:
+  pull-requests: write
+  contents: write
+  repository-projects: write
+  
 jobs:
   display_output:
-    name: Run a simple command
+    name: display a file
     runs-on: ubuntu-latest
     steps:
+      - name: checkout a repo 
+        uses: actions/checkout@v2
+        
       - name: Display the output
         run: |
-          echo "This is Raghav Atluri"
+          cat sample.txt
         shell: bash
