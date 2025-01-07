@@ -11,7 +11,7 @@ jobs:
 
       -  name: job1-Display the output of the file
          run: |
-           cat test.txt
+           cat sample.txt
          shell: bash
   job2-display_output:
     name: display the content
