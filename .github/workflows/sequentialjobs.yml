@@ -18,8 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: job1-display_output #for sequential jobs
     environment: course
-    env: 
-      name: "Harry"
     steps:
       - name: job2-Display the content
         run: |
